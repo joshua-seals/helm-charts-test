@@ -29,16 +29,18 @@ jobs:
         mkdir /tmp/${{ github.repository_owner }}
         cd /tmp/${{ github.repository_owner }}
         git clone https://github.com/${{ inputs.appRepo }}.git .
+        pwd 
+        ls
         
-    - name: Package Chart 
-      run: |
-        cd /tmp/${{ github.repository_owner }}
-        helm package --dependency-update --destination ${{ github.workspace }}/docs
+    # - name: Package Chart 
+    #   run: |
+    #     cd /tmp/${{ github.repository_owner }}
+    #     helm package --dependency-update --destination ${{ github.workspace }}/docs
 
 
 
-    - name: Package 
-      run: |
+    # - name: Package 
+    #   run: |
         
 
     # - name: Index 
