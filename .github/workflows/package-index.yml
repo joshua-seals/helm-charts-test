@@ -33,7 +33,7 @@ jobs:
     - name: Package Chart 
       run: |
         cd /tmp/${{ github.repository_owner }}
-        helm package --dependency-update Chart.yaml --destination ${{ github.workspace }}/docs
+        helm package --dependency-update ./.. --destination ${{ github.workspace }}/docs
 
 
 
