@@ -1,0 +1,20 @@
+name: package-index
+on:
+  workflow_dispatch:
+    inputs:
+      appRepo:
+        description: 'Repo of the newly updated Helm Chart'
+        required: true
+        type: string
+
+jobs:
+    bump-app-version:
+      runs-on: ubuntu-latest
+      steps:
+
+      - name: Package 
+        run: |
+          echo git clone github.com/${{ inputs.appRepo }}
+
+      # - name: Index 
+      #   run: |
