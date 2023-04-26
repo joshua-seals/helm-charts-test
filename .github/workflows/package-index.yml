@@ -32,8 +32,8 @@ jobs:
         
     - name: Package Chart 
       run: |
-        cd /tmp/${{ github.repository_owner }}
-        helm package --dependency-update ./.. --destination ${{ github.workspace }}/docs
+        cd /tmp
+        helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs
 
 
 
