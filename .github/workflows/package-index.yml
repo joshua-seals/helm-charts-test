@@ -36,15 +36,30 @@ jobs:
         helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs
         helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
-    - name: Index Package 
+    - name: Index Package
       run: | 
         helm repo index --merge index.yaml --url=https://helxplatform.github.io/helm-charts/docs ./docs
 
-    - name: Commit to Develop Branch
-      env: 
+    - name: Get package name
+      id: package
+      run: | 
+        echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
+
+
+    - name: Commit Chart.yaml Changes
+      uses: EndBug/add-and-commit@v9
+      env:
         GH_TOKEN: ${{ github.token }}
-      run: |
-        package=$(ls /tmp | grep -i '.tgz' )
-        git add docs/index.yaml docs/$package
-        git commit -m "Adding new $package and index"
-        git push origin develop
+      with:
+        author_name: Actions_${{ github.actor}}
+        message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
+        add: "/docs/index.yaml docs/${{ steps.package.outputs.package }}"
+
+    # - name: Commit to Develop Branch
+    #   env: 
+    #     GH_TOKEN: ${{ github.token }}
+    #   run: |
+    #     package=$(ls /tmp | grep -i '.tgz' )
+    #     git add docs/index.yaml docs/$package
+    #     git commit -m "Adding new $package and index"
+    #     git push origin develop
