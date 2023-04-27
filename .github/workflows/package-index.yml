@@ -34,39 +34,15 @@ jobs:
       run: |
         cd /tmp
         helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs
+        helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
+    - name: Index Package 
+      run: | 
+        helm repo index --url=https://helxplatform.github.io/helm-charts/docs --merge index.yaml
 
-
-    # - name: Package 
-    #   run: |
-        
-
-    # - name: Index 
-    #   run: |
-
-#     - name: List files in the repository
-#       run: |
-#         ls ${{ github.workspace }}
-
-#     - name: Package Chart 
-#       run: |
-#         helm package --dependency-update ${{ github.workspace }} --destination /tmp/${{ github.repository_owner }}
-
-#     - name: Get package name 
-#       id: name 
-#       run: |
-#         echo "chart_name=$(ls /tmp/${{ github.repository_owner }}/)" >> $GITHUB_OUTPUT
-#         ls /tmp/${{ github.repository_owner }}
-
-
-  # - name: Git pull Helm-Charts Add Repo to /docs
-  #   run: |
-  #     mkdir /tmp/${{ github.repository_owner }}/helm-charts
-  #     cd /tmp/${{ github.repository_owner }}/helm-charts
-  #     git clone https://github.com/joshua-seals/helm-charts-test.git .
-  #   continue-on-error: true
-
-  # - name: Move & Verify Package  
-  #   run: | 
-  #     mv /tmp/${{ github.repository_owner }}/${{ steps.name.outputs.chart_name }} /tmp/${{ github.repository_owner }}/helm-charts/docs
-  #     ls /tmp/${{ github.repository_owner }}/helm-charts/docs | grep ${{ steps.name.outputs.chart_name }}
+    - name: Commit to Develop Branch
+      env: 
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        package=$(ls /tmp | grep -i '.tgz' )
+        git add docs/index.yaml docs/$package
