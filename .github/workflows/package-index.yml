@@ -46,3 +46,4 @@ jobs:
       run: |
         package=$(ls /tmp | grep -i '.tgz' )
         git add docs/index.yaml docs/$package
+        git push origin develop
