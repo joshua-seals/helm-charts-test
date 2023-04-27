@@ -1,4 +1,5 @@
 # Designed to be triggered by github action application chart
+# This workflow will only be triggered in the context of the 'develop branch'
 name: package-index
 on:
   workflow_dispatch:
@@ -46,7 +47,7 @@ jobs:
         echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
 
 
-    - name: Commit Chart.yaml Changes
+    - name: Commit index changes to develp branch
       uses: EndBug/add-and-commit@v9
       env:
         GH_TOKEN: ${{ github.token }}
@@ -55,11 +56,6 @@ jobs:
         message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
         add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
 
-    # - name: Commit to Develop Branch
-    #   env: 
-    #     GH_TOKEN: ${{ github.token }}
-    #   run: |
-    #     package=$(ls /tmp | grep -i '.tgz' )
-    #     git add ${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/$package
-    #     git commit -m "Adding new $package and index"
-    #     git push origin develop
+
+    - name: Create New Pull Request
+      uses: peter-evans/create-pull-request@v5
