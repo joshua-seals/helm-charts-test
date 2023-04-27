@@ -40,26 +40,26 @@ jobs:
       run: | 
         helm repo index --merge index.yaml --url=https://helxplatform.github.io/helm-charts/docs ./docs
 
-    # - name: Get package name
-    #   id: package
-    #   run: | 
-    #     echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
+    - name: Get package name
+      id: package
+      run: | 
+        echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
 
 
-    # - name: Commit Chart.yaml Changes
-    #   uses: EndBug/add-and-commit@v9
-    #   env:
-    #     GH_TOKEN: ${{ github.token }}
-    #   with:
-    #     author_name: Actions_${{ github.actor}}
-    #     message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
-    #     add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
-
-    - name: Commit to Develop Branch
-      env: 
+    - name: Commit Chart.yaml Changes
+      uses: EndBug/add-and-commit@v9
+      env:
         GH_TOKEN: ${{ github.token }}
-      run: |
-        package=$(ls /tmp | grep -i '.tgz' )
-        git add ${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/$package
-        git commit -m "Adding new $package and index"
-        git push origin develop
+      with:
+        author_name: Actions_${{ github.actor}}
+        message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
+        add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
+
+    # - name: Commit to Develop Branch
+    #   env: 
+    #     GH_TOKEN: ${{ github.token }}
+    #   run: |
+    #     package=$(ls /tmp | grep -i '.tgz' )
+    #     git add ${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/$package
+    #     git commit -m "Adding new $package and index"
+    #     git push origin develop
