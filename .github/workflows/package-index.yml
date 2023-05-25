@@ -32,7 +32,7 @@ jobs:
         git clone https://github.com/${{ inputs.appRepo }}.git .
         
     - name: Check for Helx-Charts Package Updates
-      if: ${{ inputs.appRepo == 'helx-charts-test'}}
+      if: ${{ inputs.appRepo == 'helx-chart-test'}}
       run: |
         cd /tmp/${{ github.repository_owner }}/${{ inputs.appRepo }}
         helm dependency update
@@ -49,8 +49,8 @@ jobs:
     - name: Package Chart 
       run: |
         cd /tmp
-        helm package --dependency-update ./${{ github.repository_owner }}/{{ inputs.appRepo }} --destination ${{ github.workspace }}/docs
-        helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
+        helm package --dependency-update ./${{ github.repository_owner }}/${{ inputs.appRepo }} --destination ${{ github.workspace }}/docs
+        helm package --dependency-update ./${{ github.repository_owner }}/${{ inputs.appRepo }} --destination /tmp
 
     - name: Index Package
       run: | 
