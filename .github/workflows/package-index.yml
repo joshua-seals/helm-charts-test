@@ -35,8 +35,6 @@ jobs:
       if: ${{ inputs.appRepo == 'joshua-seals/helx-chart-test'}}
       run: |
         cd /tmp/${{ github.repository_owner }}
-        ls -l
-        exit 1
         helm dependency update
         cd charts/image-utils
         helm dependency update
@@ -51,8 +49,8 @@ jobs:
     - name: Package Chart 
       run: |
         cd /tmp
-        helm package --dependency-update ./${{ inputs.appRepo }} --destination ${{ github.workspace }}/docs
-        helm package --dependency-update ./${{ inputs.appRepo }} --destination /tmp
+        helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs
+        helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
     - name: Index Package
       run: | 
