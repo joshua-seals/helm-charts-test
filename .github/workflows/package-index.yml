@@ -34,7 +34,7 @@ jobs:
     - name: Check for Helx-Charts Package Updates
       if: ${{ inputs.appRepo == 'joshua-seals/helx-chart-test'}}
       run: |
-        cd /tmp/{{ github.repository_owner }}
+        cd /tmp/${{ github.repository_owner }}
         ls -l
         exit 1
         helm dependency update
