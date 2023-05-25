@@ -31,15 +31,31 @@ jobs:
         cd /tmp/${{ github.repository_owner }}
         git clone https://github.com/${{ inputs.appRepo }}.git .
         
+    - name: Check for Helx-Charts Package Updates
+      if: ${{ inputs.appRepo == 'helx-charts-test'}}
+      run: |
+        cd /tmp/${{ github.repository_owner }}/${{ inputs.appRepo }}
+        helm dependency update
+        cd charts/image-utils
+        helm dependency update
+        helm package charts/ambassador
+        helm package charts/backup-pvc-cronjob
+        helm package charts/image-utils
+        helm package charts/nfs-server
+        helm package charts/nfsrods
+        helm package charts/nginx
+        helm package charts/pod-reaper
+
     - name: Package Chart 
       run: |
         cd /tmp
-        helm package --dependency-update ./${{ github.repository_owner }} --destination ${{ github.workspace }}/docs
+        helm package --dependency-update ./${{ github.repository_owner }}/{{ inputs.appRepo }} --destination ${{ github.workspace }}/docs
         helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
     - name: Index Package
       run: | 
-        helm repo index --merge index.yaml --url=https://helxplatform.github.io/helm-charts/docs ./docs
+        helm repo index --merge ${{ github.workspace }}/docs/index.yaml --url=https://helxplatform.github.io/helm-charts/ ${{ github.workspace }}/docs
+
 
     - name: Get package name
       id: package
