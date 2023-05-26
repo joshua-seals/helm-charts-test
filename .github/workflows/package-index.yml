@@ -54,8 +54,9 @@ jobs:
         helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
     - name: Index Package
-      run: | 
-        helm repo index --merge ${{ github.workspace }}/docs/index.yaml --url=https://helxplatform.github.io/helm-charts/ ${{ github.workspace }}/docs
+      run: |
+        cp ${{ github.workspace }}/docs/index.yaml /tmp 
+        helm repo index --merge /tmp/index.yaml --url=https://helxplatform.github.io/helm-charts/ ${{ github.workspace }}/docs
 
 
     - name: Get package name
