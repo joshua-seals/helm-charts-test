@@ -3,26 +3,26 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.14.4
-    created: "2023-04-27T14:54:12.572370407Z"
+    created: "2023-05-26T13:58:58.7960597Z"
     description: A Helm chart for Kubernetes
     digest: 9f75bbcd7adcc8cd2136ddd862614163b0847a3e1eb8a18521cf8c24820c6725
     name: ambassador
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/ambassador-0.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/ambassador-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v1
     appVersion: 1.12.0
-    created: "2023-04-27T14:54:12.571956277Z"
+    created: "2023-05-26T13:58:58.795687996Z"
     description: A Helm chart for Kubernetes
     digest: 91b3aaeab29fadad9b091cae81989e31899a7be268f4cb091fdd221ca6f20834
     name: ambassador
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/ambassador-0.1.11.tgz
+    - https://helxplatform.github.io/helm-charts/ambassador-0.1.11.tgz
     version: 0.1.11
   appstore:
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:12.666707173Z"
+    created: "2023-05-26T13:58:58.873058489Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -33,11 +33,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-5.2.1.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-5.2.1.tgz
     version: 5.2.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:12.659777784Z"
+    created: "2023-05-26T13:58:58.865614413Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -48,11 +48,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.7.0.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.7.0.tgz
     version: 1.7.0
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2023-04-27T14:54:12.651584405Z"
+    created: "2023-05-26T13:58:58.859913454Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -63,11 +63,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.6.2.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.6.2.tgz
     version: 1.6.2
   - apiVersion: v2
     appVersion: 1.6.0
-    created: "2023-04-27T14:54:12.644983238Z"
+    created: "2023-05-26T13:58:58.852920183Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -78,11 +78,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.6.1.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.6.1.tgz
     version: 1.6.1
   - apiVersion: v2
     appVersion: 1.5.0
-    created: "2023-04-27T14:54:12.635618176Z"
+    created: "2023-05-26T13:58:58.847396226Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -93,11 +93,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.5.1.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.5.1.tgz
     version: 1.5.1
   - apiVersion: v2
     appVersion: 1.4.1
-    created: "2023-04-27T14:54:12.629761462Z"
+    created: "2023-05-26T13:58:58.840360454Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -108,11 +108,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.2.1.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.2.1.tgz
     version: 1.2.1
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2023-04-27T14:54:12.619850762Z"
+    created: "2023-05-26T13:58:58.835489504Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -123,11 +123,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.1.1.tgz
     version: 1.1.1
   - apiVersion: v2
     appVersion: 1.4.0
-    created: "2023-04-27T14:54:12.614205563Z"
+    created: "2023-05-26T13:58:58.829166039Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -138,11 +138,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.3.1-alpha
-    created: "2023-04-27T14:54:12.606488918Z"
+    created: "2023-05-26T13:58:58.824021286Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -153,11 +153,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-1.0.0.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2023-04-27T14:54:12.600596001Z"
+    created: "2023-05-26T13:58:58.81754412Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -168,11 +168,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-0.6.3.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-0.6.3.tgz
     version: 0.6.3
   - apiVersion: v2
     appVersion: 1.3.1-dev
-    created: "2023-04-27T14:54:12.592664541Z"
+    created: "2023-05-26T13:58:58.812308766Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -183,11 +183,11 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-0.6.2-dev.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-0.6.2-dev.tgz
     version: 0.6.2-dev
   - apiVersion: v2
     appVersion: 1.3.1-dev
-    created: "2023-04-27T14:54:12.586592012Z"
+    created: "2023-05-26T13:58:58.807536917Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -198,63 +198,63 @@ entries:
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-0.6.1-dev.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-0.6.1-dev.tgz
     version: 0.6.1-dev
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2023-04-27T14:54:12.575758146Z"
+    created: "2023-05-26T13:58:58.798946329Z"
     description: A Helm chart for Kubernetes
     digest: 659ece6774b61b94e1e097002403e853b5fae8c06b3b2f68786b561068e564ae
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-0.4.1.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-0.4.1.tgz
     version: 0.4.1
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2023-04-27T14:54:12.574638867Z"
+    created: "2023-05-26T13:58:58.797992119Z"
     description: A Helm chart for Kubernetes
     digest: bf150176fb3c46cfd1912178dbd484a6a3d1cabbcf3d38c929b6b632a511194e
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-0.4.0.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
     appVersion: 1.2.dev-bcf0e7ca
-    created: "2023-04-27T14:54:12.573538189Z"
+    created: "2023-05-26T13:58:58.79703891Z"
     description: A Helm chart for Kubernetes
     digest: 4974160de1798c1c50e4a4e04190e8f9ebb410f8ba2afc56e1672b5a9ef8b4d4
     name: appstore
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/appstore-0.3.0-dev.tgz
+    - https://helxplatform.github.io/helm-charts/appstore-0.3.0-dev.tgz
     version: 0.3.0-dev
   backup-pvc-cronjob:
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2023-04-27T14:54:12.667099601Z"
+    created: "2023-05-26T13:58:58.873417693Z"
     description: A Helm chart for Kubernetes
     digest: 949a26bef023fef7b7356f3b9f4bdd5c8d9218af97fc128073bb3990224be689
     name: backup-pvc-cronjob
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/backup-pvc-cronjob-0.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/backup-pvc-cronjob-0.2.0.tgz
     version: 0.2.0
   cmaq:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:12.705505215Z"
+    created: "2023-05-26T13:58:58.90441061Z"
     description: A Helm chart for Kubernetes
     digest: 47bcc03a2dcd81a85df157282add97dc14fb179ac19fed5889fdd7d92388e9ce
     name: cmaq
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/cmaq-0.1.5.tgz
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:12.698549324Z"
+    created: "2023-05-26T13:58:58.899792663Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -265,11 +265,11 @@ entries:
     name: cmaq
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/cmaq-0.1.4.tgz
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:12.693018633Z"
+    created: "2023-05-26T13:58:58.8936532Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -280,11 +280,11 @@ entries:
     name: cmaq
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/cmaq-0.1.3.tgz
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:12.686451069Z"
+    created: "2023-05-26T13:58:58.888966652Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -295,11 +295,11 @@ entries:
     name: cmaq
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/cmaq-0.1.2.tgz
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:12.680649559Z"
+    created: "2023-05-26T13:58:58.884218903Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -310,11 +310,11 @@ entries:
     name: cmaq
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/cmaq-0.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:12.674545327Z"
+    created: "2023-05-26T13:58:58.87807714Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -325,33 +325,92 @@ entries:
     name: cmaq
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/cmaq-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/cmaq-0.1.0.tgz
     version: 0.1.0
   dev-shell:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2023-04-27T14:54:12.706645496Z"
+    created: "2023-05-26T13:58:58.906072427Z"
     description: A Helm chart for Kubernetes
     digest: 234f7ee717f1b6921bba96b48d747ae8847206150046fc40b885c2c9b45aa9b5
     name: dev-shell
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/dev-shell-0.1.2.tgz
+    - https://helxplatform.github.io/helm-charts/dev-shell-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-04-27T14:54:12.706086857Z"
+    created: "2023-05-26T13:58:58.90538732Z"
     description: A Helm chart for Kubernetes
     digest: 222788564de3b070532c3490fcfbfe935bc76a3524aec6a6e7c7f028a6ba19fe
     name: dev-shell
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/dev-shell-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/dev-shell-0.1.0.tgz
     version: 0.1.0
   helx:
   - apiVersion: v2
+    appVersion: 3.0.0
+    created: "2023-05-26T13:59:00.506438436Z"
+    dependencies:
+    - condition: ambassador.enabled
+      name: ambassador
+      repository: ""
+      version: '>= 0.0.0'
+    - condition: appstore.enabled
+      name: appstore
+      repository: '@helx-charts'
+      version: '>= 3.0.0'
+    - condition: backup-pvc-cronjob.enabled
+      name: backup-pvc-cronjob
+      repository: ""
+      version: '>= 0.0.0'
+    - condition: image-utils.enabled
+      name: image-utils
+      repository: ""
+      version: '>= 1.0.0'
+    - condition: monitoring.enabled
+      name: monitoring
+      repository: '@helx-charts'
+      version: '>= 0.0.0'
+    - condition: nfs-server.enabled
+      name: nfs-server
+      repository: ""
+      version: '>= 0.0.0'
+    - condition: nfsrods.enabled
+      name: nfsrods
+      repository: ""
+      version: '>= 1.0.0'
+    - condition: nginx.enabled
+      name: nginx
+      repository: ""
+      version: '>= 0.0.0'
+    - condition: pod-reaper.enabled
+      name: pod-reaper
+      repository: ""
+      version: '>= 0.0.0'
+    - condition: search.enabled
+      name: search
+      repository: '@helx-charts'
+      version: '>= 1.0.0'
+    - condition: tycho-api.enabled
+      name: tycho-api
+      repository: '@helx-charts'
+      version: 0.2-dev
+    - condition: ui.enabled
+      name: ui
+      repository: '@helx-charts'
+      version: '>= 1.0.0'
+    description: A Helm chart for deploying HeLx to Kubernetes.
+    digest: b4b8d51ad092ea3bddea3a2a0722fbfd97a2a9a2a2362fc13019deb32adfb098
+    name: helx
+    type: application
+    urls:
+    - https://helxplatform.github.io/helm-charts/helx-3.0.1.tgz
+    version: 3.0.1
+  - apiVersion: v2
     appVersion: 2.4.0
-    created: "2023-04-27T14:54:14.550873232Z"
+    created: "2023-05-26T13:59:00.431092163Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -402,11 +461,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.9.1.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.9.1.tgz
     version: 1.9.1
   - apiVersion: v2
     appVersion: 2.4.0
-    created: "2023-04-27T14:54:14.45717191Z"
+    created: "2023-05-26T13:59:00.357309507Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -457,11 +516,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.9.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.9.0.tgz
     version: 1.9.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-04-27T14:54:14.359909936Z"
+    created: "2023-05-26T13:59:00.277261486Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -512,11 +571,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.8.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.8.0.tgz
     version: 1.8.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-04-27T14:54:14.270301503Z"
+    created: "2023-05-26T13:59:00.203873534Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -567,11 +626,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.7.1.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.7.1.tgz
     version: 1.7.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-04-27T14:54:14.180463754Z"
+    created: "2023-05-26T13:59:00.127654252Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -622,11 +681,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.7.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.7.0.tgz
     version: 1.7.0
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2023-04-27T14:54:14.098209141Z"
+    created: "2023-05-26T13:59:00.056941927Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -677,11 +736,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.6.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.6.0.tgz
     version: 1.6.0
   - apiVersion: v2
     appVersion: 2.2.0
-    created: "2023-04-27T14:54:14.001022573Z"
+    created: "2023-05-26T13:58:59.98508739Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -732,11 +791,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.5.2.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.5.2.tgz
     version: 1.5.2
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.913490086Z"
+    created: "2023-05-26T13:58:59.911830339Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -787,11 +846,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.3.4.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.3.4.tgz
     version: 1.3.4
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.825822291Z"
+    created: "2023-05-26T13:58:59.842798632Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -842,11 +901,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.3.1.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.3.1.tgz
     version: 1.3.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.742348891Z"
+    created: "2023-05-26T13:58:59.771564401Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -897,11 +956,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.3.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.3.0.tgz
     version: 1.3.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.649582235Z"
+    created: "2023-05-26T13:58:59.696494032Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -952,11 +1011,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.557016394Z"
+    created: "2023-05-26T13:58:59.62612081Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1007,11 +1066,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.1.3.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.1.3.tgz
     version: 1.1.3
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.470771398Z"
+    created: "2023-05-26T13:58:59.556285194Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1062,11 +1121,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.1.2.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.1.2.tgz
     version: 1.1.2
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.383020597Z"
+    created: "2023-05-26T13:58:59.485572769Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1117,11 +1176,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.1.1.tgz
     version: 1.1.1
   - apiVersion: v2
     appVersion: 2.0.0
-    created: "2023-04-27T14:54:13.295767631Z"
+    created: "2023-05-26T13:58:59.416726963Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1172,11 +1231,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2023-04-27T14:54:13.215647968Z"
+    created: "2023-05-26T13:58:59.346992848Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1227,11 +1286,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-1.0.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.10.0
-    created: "2023-04-27T14:54:13.132996927Z"
+    created: "2023-05-26T13:58:59.275103511Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1282,11 +1341,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-0.15.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-0.15.0.tgz
     version: 0.15.0
   - apiVersion: v2
     appVersion: 1.9.0
-    created: "2023-04-27T14:54:13.043283687Z"
+    created: "2023-05-26T13:58:59.203989582Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1337,11 +1396,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-0.13.1.tgz
+    - https://helxplatform.github.io/helm-charts/helx-0.13.1.tgz
     version: 0.13.1
   - apiVersion: v2
     appVersion: 1.8.0
-    created: "2023-04-27T14:54:12.956891581Z"
+    created: "2023-05-26T13:58:59.136405689Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1396,11 +1455,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-0.12.2.tgz
+    - https://helxplatform.github.io/helm-charts/helx-0.12.2.tgz
     version: 0.12.2
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2023-04-27T14:54:12.87466567Z"
+    created: "2023-05-26T13:58:59.064255249Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1455,11 +1514,11 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-0.12.0.tgz
+    - https://helxplatform.github.io/helm-charts/helx-0.12.0.tgz
     version: 0.12.0
   - apiVersion: v2
     appVersion: 1.7.0
-    created: "2023-04-27T14:54:12.784610806Z"
+    created: "2023-05-26T13:58:58.976422049Z"
     dependencies:
     - condition: ambassador.enabled
       name: ambassador
@@ -1514,23 +1573,23 @@ entries:
     name: helx
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/helx-0.11.1.tgz
+    - https://helxplatform.github.io/helm-charts/helx-0.11.1.tgz
     version: 0.11.1
   hubhub:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:14.551458573Z"
+    created: "2023-05-26T13:59:00.506965941Z"
     description: A Helm chart for Kubernetes
     digest: 950556a9aaf381030ecb8615e75a02dc3a9bea0daa061d0b14125a02e4d71d7d
     name: hubhub
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/hubhub-0.2.1.tgz
+    - https://helxplatform.github.io/helm-charts/hubhub-0.2.1.tgz
     version: 0.2.1
   image-utils:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-04-27T14:54:14.552444743Z"
+    created: "2023-05-26T13:59:00.507887351Z"
     dependencies:
     - condition: imagepullsecret-patcher.enabled
       name: imagepullsecret-patcher
@@ -1545,22 +1604,22 @@ entries:
     name: image-utils
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/image-utils-1.0.0.tgz
+    - https://helxplatform.github.io/helm-charts/image-utils-1.0.0.tgz
     version: 1.0.0
   kubernetes-image-puller:
   - apiVersion: v1
-    created: "2023-04-27T14:54:14.552711362Z"
+    created: "2023-05-26T13:59:00.508187254Z"
     description: The kubernetes image puller downloads che images ahead of time for
       faster workspace startup
     digest: 5eadd31ed669dfd0b31585bc827c2067e9e8c76d8303a1a1ebc5f41d40544f94
     name: kubernetes-image-puller
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/kubernetes-image-puller-1.0.0.tgz
+    - https://helxplatform.github.io/helm-charts/kubernetes-image-puller-1.0.0.tgz
     version: 1.0.0
   monitoring:
   - apiVersion: v2
     appVersion: 0.2.2
-    created: "2023-04-27T14:54:14.74555269Z"
+    created: "2023-05-26T13:59:00.667378986Z"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1587,11 +1646,11 @@ entries:
     name: monitoring
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/monitoring-0.2.2.tgz
+    - https://helxplatform.github.io/helm-charts/monitoring-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-04-27T14:54:14.693490111Z"
+    created: "2023-05-26T13:59:00.627888081Z"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1618,11 +1677,11 @@ entries:
     name: monitoring
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/monitoring-0.2.1.tgz
+    - https://helxplatform.github.io/helm-charts/monitoring-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.2.0
-    created: "2023-04-27T14:54:14.646652201Z"
+    created: "2023-05-26T13:59:00.58781307Z"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1649,11 +1708,11 @@ entries:
     name: monitoring
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/monitoring-0.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/monitoring-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:14.597869653Z"
+    created: "2023-05-26T13:59:00.54877487Z"
     dependencies:
     - condition: cost-analyzer.enabled
       name: cost-analyzer
@@ -1680,106 +1739,106 @@ entries:
     name: monitoring
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/monitoring-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/monitoring-0.1.0.tgz
     version: 0.1.0
   nfs-server:
   - apiVersion: v2
     appVersion: "0.8"
-    created: "2023-04-27T14:54:14.746219337Z"
+    created: "2023-05-26T13:59:00.667856591Z"
     description: Creates an NFS server that can be used for PVCs.
     digest: 9c485789056ebb731c723bc6b34d83ceea76b7a0327367e827002fa00fb73330
     name: nfs-server
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/nfs-server-0.2.5.tgz
+    - https://helxplatform.github.io/helm-charts/nfs-server-0.2.5.tgz
     version: 0.2.5
   nfsrods:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-04-27T14:54:14.747480326Z"
+    created: "2023-05-26T13:59:00.668946802Z"
     description: A standalone NFSv4.1 server (via nfs4j) with a Virtual File System
       implementation supporting the iRODS Data Management Platform.
     digest: d993ef17a207950fe57c0882700520aeae98fea40529e3a85b59ff55cba01015
     name: nfsrods
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/nfsrods-2.0.4.tgz
+    - https://helxplatform.github.io/helm-charts/nfsrods-2.0.4.tgz
     version: 2.0.4
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-04-27T14:54:14.746836281Z"
+    created: "2023-05-26T13:59:00.668414697Z"
     description: A standalone NFSv4.1 server (via nfs4j) with a Virtual File System
       implementation supporting the iRODS Data Management Platform.
     digest: b672c4215882e6bc7292ce905ea81c078e80f567f532610a918be28c971763cb
     name: nfsrods
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/nfsrods-2.0.3.tgz
+    - https://helxplatform.github.io/helm-charts/nfsrods-2.0.3.tgz
     version: 2.0.3
   nginx:
   - apiVersion: v1
     appVersion: 1.0.13
-    created: "2023-04-27T14:54:14.748763917Z"
+    created: "2023-05-26T13:59:00.669984113Z"
     description: A Helm chart for Kubernetes
     digest: ff8e4af62c9abcd9440997e30e7dff6c6aeda35da6696af67665b1077b55974d
     name: nginx
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/nginx-0.4.0.tgz
+    - https://helxplatform.github.io/helm-charts/nginx-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v1
     appVersion: 1.0.13
-    created: "2023-04-27T14:54:14.748139973Z"
+    created: "2023-05-26T13:59:00.669464007Z"
     description: A Helm chart for Kubernetes
     digest: 752146e65b1f9363bedd5e2ab1b8edcd791b83531129541d27354deac2412988
     name: nginx
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/nginx-0.3.4.tgz
+    - https://helxplatform.github.io/helm-charts/nginx-0.3.4.tgz
     version: 0.3.4
   pod-reaper:
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2023-04-27T14:54:14.74951667Z"
+    created: "2023-05-26T13:59:00.670623319Z"
     description: A Helm chart for pod-reaper
     digest: 9e1c86fdcbb02566ca31e1bbdec545ac7e8a1c6b3d478614d5c3fd7f8f905d27
     home: https://github.com/target/pod-reaper
     name: pod-reaper
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/pod-reaper-0.2.1.tgz
+    - https://helxplatform.github.io/helm-charts/pod-reaper-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v1
     appVersion: 1.1.2
-    created: "2023-04-27T14:54:14.749142344Z"
+    created: "2023-05-26T13:59:00.670302316Z"
     description: A Helm chart for pod-reaper
     digest: fbfde60eb79e0d5eb809cfcf15906888e89958748bb7d9060b77be7417f5b328
     home: https://github.com/target/pod-reaper
     name: pod-reaper
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/pod-reaper-0.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/pod-reaper-0.2.0.tgz
     version: 0.2.0
   redis-insight:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-04-27T14:54:14.749832593Z"
+    created: "2023-05-26T13:59:00.670899022Z"
     description: A Helm chart for Kubernetes
     digest: 0a9a48c2ae44a7415affb9354b52a9636ddbd06fd972399da2c1fc2944bb2d95
     name: redis-insight
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/redis-insight-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/redis-insight-0.1.0.tgz
     version: 0.1.0
   road:
   - apiVersion: v2
-    created: "2023-04-27T14:54:14.756634273Z"
+    created: "2023-05-26T13:59:00.676735082Z"
     description: A Helm chart for Kubernetes
     digest: 488813fa78e35e7177800e193ba2ecc279fefcbfafa56d4ee7ab039dd5444abc
     name: road
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/road-0.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/road-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:14.755393686Z"
+    created: "2023-05-26T13:59:00.675647871Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -1790,12 +1849,12 @@ entries:
     name: road
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/road-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/road-0.1.0.tgz
     version: 0.1.0
   search:
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-04-27T14:54:15.433608717Z"
+    created: "2023-05-26T13:59:01.237924536Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1823,11 +1882,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-2.0.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-04-27T14:54:15.398186813Z"
+    created: "2023-05-26T13:59:01.211117961Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1851,11 +1910,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.9.3.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.9.3.tgz
     version: 1.9.3
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-04-27T14:54:15.366634183Z"
+    created: "2023-05-26T13:59:01.185102894Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1879,11 +1938,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.9.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.9.0.tgz
     version: 1.9.0
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-04-27T14:54:15.334421507Z"
+    created: "2023-05-26T13:59:01.158654623Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1907,11 +1966,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.8.1.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.8.1.tgz
     version: 1.8.1
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-04-27T14:54:15.307637714Z"
+    created: "2023-05-26T13:59:01.135420385Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1935,11 +1994,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.8.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.8.0.tgz
     version: 1.8.0
   - apiVersion: v2
     appVersion: 2.9.0
-    created: "2023-04-27T14:54:15.276554017Z"
+    created: "2023-05-26T13:59:01.109149615Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1963,11 +2022,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.7.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.7.0.tgz
     version: 1.7.0
   - apiVersion: v2
     appVersion: 2.8.0
-    created: "2023-04-27T14:54:15.250254658Z"
+    created: "2023-05-26T13:59:01.08030642Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -1991,11 +2050,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.6.4.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.6.4.tgz
     version: 1.6.4
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-04-27T14:54:15.219678398Z"
+    created: "2023-05-26T13:59:01.058641597Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2019,11 +2078,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.6.3.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.6.3.tgz
     version: 1.6.3
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-04-27T14:54:15.190361926Z"
+    created: "2023-05-26T13:59:01.036356469Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2047,11 +2106,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.6.2.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.6.2.tgz
     version: 1.6.2
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-04-27T14:54:15.165222249Z"
+    created: "2023-05-26T13:59:01.013204632Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2075,11 +2134,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.6.0-dev.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.6.0-dev.tgz
     version: 1.6.0-dev
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-04-27T14:54:15.126261896Z"
+    created: "2023-05-26T13:59:00.97988769Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2103,11 +2162,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.5.0-dev.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.5.0-dev.tgz
     version: 1.5.0-dev
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-04-27T14:54:15.099819127Z"
+    created: "2023-05-26T13:59:00.958746273Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2131,11 +2190,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.4.2.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.4.2.tgz
     version: 1.4.2
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2023-04-27T14:54:15.070937986Z"
+    created: "2023-05-26T13:59:00.93401032Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2159,11 +2218,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.4.1.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.4.1.tgz
     version: 1.4.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-04-27T14:54:15.046016125Z"
+    created: "2023-05-26T13:59:00.912927903Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2187,11 +2246,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.3.1.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.3.1.tgz
     version: 1.3.1
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-04-27T14:54:15.019897379Z"
+    created: "2023-05-26T13:59:00.890662775Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2215,11 +2274,11 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.3.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.3.0.tgz
     version: 1.3.0
   - apiVersion: v2
     appVersion: 2.3.0
-    created: "2023-04-27T14:54:14.995092826Z"
+    created: "2023-05-26T13:59:00.871130175Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2243,10 +2302,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2023-04-27T14:54:14.971327146Z"
+    created: "2023-05-26T13:59:00.850360962Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2270,10 +2329,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2023-04-27T14:54:14.946695105Z"
+    created: "2023-05-26T13:59:00.828534238Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2297,10 +2356,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.1.0-rc0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.1.0-rc0.tgz
     version: 1.1.0-rc0
   - apiVersion: v2
-    created: "2023-04-27T14:54:14.904747441Z"
+    created: "2023-05-26T13:59:00.798754333Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2324,10 +2383,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-1.0.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2023-04-27T14:54:14.868560583Z"
+    created: "2023-05-26T13:59:00.766473102Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2351,10 +2410,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-0.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/search-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2023-04-27T14:54:14.82903899Z"
+    created: "2023-05-26T13:59:00.735572385Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2378,10 +2437,10 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2023-04-27T14:54:14.792494308Z"
+    created: "2023-05-26T13:59:00.70680849Z"
     dependencies:
     - condition: airflow.enabled
       name: airflow
@@ -2405,12 +2464,12 @@ entries:
     name: search
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-0.1.0-dev.tgz
+    - https://helxplatform.github.io/helm-charts/search-0.1.0-dev.tgz
     version: 0.1.0-dev
   search-api:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-04-27T14:54:15.46295199Z"
+    created: "2023-05-26T13:59:01.259519357Z"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -2425,11 +2484,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-api-0.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-api-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2023-04-27T14:54:15.447816321Z"
+    created: "2023-05-26T13:59:01.250670666Z"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -2444,11 +2503,11 @@ entries:
     name: search-api
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-api-0.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/search-api-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 2.0.1
-    created: "2023-04-27T14:54:15.440706018Z"
+    created: "2023-05-26T13:59:01.243827096Z"
     dependencies:
     - condition: elasticsearch.enabled
       name: elasticsearch
@@ -2463,32 +2522,32 @@ entries:
     name: search-api
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-api-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-api-0.1.0.tgz
     version: 0.1.0
   search-ui:
   - apiVersion: v2
     appVersion: 1.1.1-dev
-    created: "2023-04-27T14:54:15.463391121Z"
+    created: "2023-05-26T13:59:01.259892861Z"
     description: A Helm chart for Kubernetes
     digest: b149eb5f60f5396bbf8a62abcdc296aee8ba810d6a8de8965c9a75a46c25289f
     name: search-ui
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/search-ui-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/search-ui-0.1.0.tgz
     version: 0.1.0
   social:
   - apiVersion: v2
-    created: "2023-04-27T14:54:15.477083789Z"
+    created: "2023-05-26T13:59:01.266130225Z"
     description: A Helm chart for Kubernetes
     digest: 069d931ac4c607dbb30093da5917d23bb2a8186d9d2790ce063d4a048bd2a4a7
     name: social
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/social-0.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/social-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-27T14:54:15.475500977Z"
+    created: "2023-05-26T13:59:01.264966113Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -2499,12 +2558,12 @@ entries:
     name: social
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/social-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/social-0.1.0.tgz
     version: 0.1.0
   tranql:
   - apiVersion: v2
     appVersion: 0.4.dev2
-    created: "2023-04-27T14:54:15.561666067Z"
+    created: "2023-05-26T13:59:01.314323119Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2515,11 +2574,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.4.2.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.4.2.tgz
     version: 0.4.2
   - apiVersion: v2
     appVersion: 0.4.dev2
-    created: "2023-04-27T14:54:15.553047858Z"
+    created: "2023-05-26T13:59:01.309129166Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2530,11 +2589,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.4.1-dev.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.4.1-dev.tgz
     version: 0.4.1-dev
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2023-04-27T14:54:15.535773337Z"
+    created: "2023-05-26T13:59:01.29788385Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2545,11 +2604,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.2.1.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: 0.3.0
-    created: "2023-04-27T14:54:15.52351487Z"
+    created: "2023-05-26T13:59:01.291745087Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2560,11 +2619,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: develop-0.0.63
-    created: "2023-04-27T14:54:15.517811767Z"
+    created: "2023-05-26T13:59:01.287392443Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2575,11 +2634,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.1.4.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
     appVersion: develop-0.0.62
-    created: "2023-04-27T14:54:15.512523394Z"
+    created: "2023-05-26T13:59:01.283017698Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2590,11 +2649,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.1.3.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
     appVersion: develop-0.0.59
-    created: "2023-04-27T14:54:15.501629624Z"
+    created: "2023-05-26T13:59:01.276734734Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2605,11 +2664,11 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.1.2.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
     appVersion: develop-0.0.58
-    created: "2023-04-27T14:54:15.496431956Z"
+    created: "2023-05-26T13:59:01.272303088Z"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -2620,68 +2679,68 @@ entries:
     name: tranql
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tranql-0.1.1.tgz
+    - https://helxplatform.github.io/helm-charts/tranql-0.1.1.tgz
     version: 0.1.1
   tycho-api:
   - apiVersion: v2
     appVersion: 1.0.29
-    created: "2023-04-27T14:54:15.562474824Z"
+    created: "2023-05-26T13:59:01.314767423Z"
     description: A Helm chart for Kubernetes
     digest: ad204054c0409cb7286ea3c889cdc48e7875541a5c48d8932dc4cdd239e72b69
     name: tycho-api
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/tycho-api-0.2-dev.tgz
+    - https://helxplatform.github.io/helm-charts/tycho-api-0.2-dev.tgz
     version: 0.2-dev
   ui:
   - apiVersion: v2
     appVersion: 2.1.0
-    created: "2023-04-27T14:54:15.565635347Z"
+    created: "2023-05-26T13:59:01.31736885Z"
     description: A Helm chart for Kubernetes
     digest: 2e564d1cda4d1442861fc99a6a9af41916c4006edf8ebf7d745cd03987155699
     name: ui
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/ui-0.4.0.tgz
+    - https://helxplatform.github.io/helm-charts/ui-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-04-27T14:54:15.565028504Z"
+    created: "2023-05-26T13:59:01.316874045Z"
     description: A Helm chart for Kubernetes
     digest: 5d412c69bb390900f5c98fe6250d990b7bbc8be9becfc76738ce5e58f68bd649
     name: ui
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/ui-0.3.1.tgz
+    - https://helxplatform.github.io/helm-charts/ui-0.3.1.tgz
     version: 0.3.1
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-04-27T14:54:15.564434762Z"
+    created: "2023-05-26T13:59:01.31638634Z"
     description: A Helm chart for Kubernetes
     digest: 43ea023b189c298fe1f713a486e098956b30da72c2a88086efe71575cfa6552a
     name: ui
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/ui-0.3.0-dev.tgz
+    - https://helxplatform.github.io/helm-charts/ui-0.3.0-dev.tgz
     version: 0.3.0-dev
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-04-27T14:54:15.56384102Z"
+    created: "2023-05-26T13:59:01.315872635Z"
     description: A Helm chart for Kubernetes
     digest: b0b612b16853f1d48cba0e7ee80df459042baf5fecbde7236e28781d4c639e61
     name: ui
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/ui-0.2.0.tgz
+    - https://helxplatform.github.io/helm-charts/ui-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 2.0.0-dev.4
-    created: "2023-04-27T14:54:15.563099168Z"
+    created: "2023-05-26T13:59:01.315268229Z"
     description: A Helm chart for Kubernetes
     digest: efe258ce7d0af952b5867ffab1020aa43ebe88069c8b17e5a7738031dc31bac7
     name: ui
     type: application
     urls:
-    - https://helxplatform.github.io/helm-charts/docs/ui-0.1.0.tgz
+    - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-27T14:54:12.571155321Z"
+generated: "2023-05-26T13:58:58.79514239Z"
