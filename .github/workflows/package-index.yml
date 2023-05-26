@@ -34,11 +34,10 @@ jobs:
     - name: Check for Helx-Charts Package Updates
       if: ${{ inputs.appRepo == 'joshua-seals/helx-chart-test'}}
       run: |
-        helm repo add helx-charts
         cd /tmp/${{ github.repository_owner }}
-        ls 
-        helm dependency update
-        cd charts/image-utils
+        helm repo add helx-charts https://helxplatform.github.io/helm-charts
+        helm repo update 
+        helm dependency update ./charts/image-utils
         helm dependency update
         helm package charts/ambassador
         helm package charts/backup-pvc-cronjob
