@@ -36,6 +36,7 @@ jobs:
       run: |
         helm repo add helx-charts
         cd /tmp/${{ github.repository_owner }}
+        ls 
         helm dependency update
         cd charts/image-utils
         helm dependency update
