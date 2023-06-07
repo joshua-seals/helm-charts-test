@@ -81,13 +81,22 @@ jobs:
         author_name: Actions_${{ github.actor}}
         message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
         add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
-
-    # https://github.com/marketplace/actions/create-pull-request
-    - name: Create New Pull Request
-      uses: peter-evans/create-pull-request@v5
-      with:
-        # Reviewers can be a comma separated list.
-        reviewers: |
-          pj-linebaugh
-          waTeim 
-        title: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
+        
+    - name: Create New CI Pull Request
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh pr create 
+          --base develop 
+          --head ci_automation_${{ steps.packageName.outputs.packageName }}
+          --reviewer pj-linebaugh
+          --fill
+#     # https://github.com/marketplace/actions/create-pull-request
+#     - name: Create New Pull Request
+#       uses: peter-evans/create-pull-request@v5
+#       with:
+#         # Reviewers can be a comma separated list.
+#         reviewers: |
+#           pj-linebaugh
+#           waTeim 
+#         title: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
