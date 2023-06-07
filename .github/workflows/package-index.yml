@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       appRepo:
-        description: 'Repo of the newly updated Helm Chart'
+        description: '🛑 NOT FOR MANUAL USE!!! Repo of the newly updated Helm Chart.'
         required: true
         type: string
 
@@ -30,9 +30,9 @@ jobs:
         mkdir /tmp/${{ github.repository_owner }}
         cd /tmp/${{ github.repository_owner }}
         git clone https://github.com/${{ inputs.appRepo }}.git .
-        
+
     - name: Check for Helx-Charts Package Updates
-      if: ${{ inputs.appRepo == 'joshua-seals/helx-chart-test'}}
+      if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
       run: |
         cd /tmp/${{ github.repository_owner }}
         helm repo add helx-charts https://helxplatform.github.io/helm-charts
@@ -46,7 +46,7 @@ jobs:
         helm package charts/nfsrods
         helm package charts/nginx
         helm package charts/pod-reaper
-
+        
     - name: Package Chart 
       run: |
         cd /tmp
@@ -54,29 +54,40 @@ jobs:
         helm package --dependency-update ./${{ github.repository_owner }} --destination /tmp
 
     - name: Index Package
-      run: |
+      run: | 
         cp ${{ github.workspace }}/docs/index.yaml /tmp 
         helm repo index --merge /tmp/index.yaml --url=https://helxplatform.github.io/helm-charts/ ${{ github.workspace }}/docs
-
 
     - name: Get package name
       id: package
       run: | 
         echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
-
+        
+    - name: Get packagename without extension
+      id: packageName
+      run: | 
+        BASE=${{ steps.package.outputs.package }}
+        echo $BASE
+        pNAME=${BASE%.*}
+        echo $pNAME
+        echo "packageName=$pNAME" >> "$GITHUB_OUTPUT"
 
     - name: Commit index changes to develp branch
       uses: EndBug/add-and-commit@v9
       env:
         GH_TOKEN: ${{ github.token }}
       with:
+        new_branch: ci_automation_${{ steps.packageName.outputs.packageName }}
         author_name: Actions_${{ github.actor}}
         message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
         add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
 
-
+    # https://github.com/marketplace/actions/create-pull-request
     - name: Create New Pull Request
       uses: peter-evans/create-pull-request@v5
       with:
-        reviewers: pj-linebaugh
+        # Reviewers can be a comma separated list.
+        reviewers: |
+          pj-linebaugh
+          waTeim 
         title: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
