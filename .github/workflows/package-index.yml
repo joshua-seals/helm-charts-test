@@ -86,11 +86,11 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh pr create 
-          --base develop 
-          --head ci_automation_${{ steps.packageName.outputs.packageName }}
+        gh pr create \
+          --fill \
+          --base develop \ 
+          --head ci_automation_${{ steps.packageName.outputs.packageName }} \
           --reviewer pj-linebaugh
-          --fill
 #     # https://github.com/marketplace/actions/create-pull-request
 #     - name: Create New Pull Request
 #       uses: peter-evans/create-pull-request@v5
