@@ -1850,6 +1850,41 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/pod-reaper-0.2.0.tgz
     version: 0.2.0
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 14.4.0
+    created: "2023-07-17T16:36:54.738174865Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: PostgreSQL (Postgres) is an open source object-relational database
+      known for reliability and data integrity. ACID-compliant, it supports foreign
+      keys, joins, views, triggers and stored procedures.
+    digest: 0f28a70ea01674fe9754f442b81499cafd60bb5c3b9255dd95bd285a83f7a60a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-220x234.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/postgresql
+    - https://www.postgresql.org/
+    urls:
+    - https://helxplatform.github.io/helm-charts/charts/postgresql-11.6.26.tgz
+    version: 11.6.26
   redis-insight:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -2820,4 +2855,4 @@ entries:
     urls:
     - https://helxplatform.github.io/helm-charts/ui-0.1.0.tgz
     version: 0.1.0
-generated: "2023-07-17T15:47:28.041450271Z"
+generated: "2023-07-17T16:36:54.732955089Z"
