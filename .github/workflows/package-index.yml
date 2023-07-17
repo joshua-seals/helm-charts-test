@@ -89,11 +89,11 @@ jobs:
       with:
         new_branch: actions/${{ steps.package.outputs.package }}
         author_name: ${{ github.actor}}
-        message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
+        message: "Adding helx-chart apps individually"
         add: "${{ github.workspace }}/docs/*"
 
     - name: Create New CI Pull Request
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        gh pr create --fill --base develop --head actions/${{ steps.package.outputs.package }} --reviewer pj-linebaugh
+        gh pr create --fill --base develop --head actions/${{ steps.package.outputs.package }}
