@@ -72,15 +72,15 @@ jobs:
         echo "package=$(ls /tmp | grep -i '.tgz' )" >> "$GITHUB_OUTPUT"
 
 
-    - name: Commit index changes to develp branch
-      uses: EndBug/add-and-commit@v9
-      env:
-        GH_TOKEN: ${{ github.token }}
-      with:
-        new_branch: actions/${{ steps.package.outputs.package }}
-        author_name: Actions_${{ github.actor}}
-        message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
-        add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
+    # - name: Commit index changes to develp branch
+    #   uses: EndBug/add-and-commit@v9
+    #   env:
+    #     GH_TOKEN: ${{ github.token }}
+    #   with:
+    #     new_branch: actions/${{ steps.package.outputs.package }}
+    #     author_name: Actions_${{ github.actor}}
+    #     message: "Adding ${{ steps.package.outputs.package }} and new index.yaml"
+    #     add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
     
     - name: Commit Helx-Charts individual packages
       if: ${{ inputs.appRepo == 'joshua-seals/helx-chart-test'}}
@@ -89,8 +89,8 @@ jobs:
         GH_TOKEN: ${{ github.token }}
       with:
         new_branch: actions/${{ steps.package.outputs.package }}
-        author_name: ${{ github.actor}}
-        message: "Adding helx-chart apps individually"
+        author_name: Actions_${{ github.actor}}
+        message: "Doing everything"
         add: "${{ github.workspace }}/docs/*"
 
     - name: Create New CI Pull Request
