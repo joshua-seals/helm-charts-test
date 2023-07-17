@@ -82,7 +82,7 @@ jobs:
         add: "${{ github.workspace }}/docs/index.yaml ${{ github.workspace }}/docs/${{ steps.package.outputs.package }}"
     
     - name: Commit Helx-Charts individual packages
-      if: ${{ inputs.appRepo == 'helxplatform/helx-chart'}}
+      if: ${{ inputs.appRepo == 'joshua-seals/helx-chart-test'}}
       uses: EndBug/add-and-commit@v9
       env:
         GH_TOKEN: ${{ github.token }}
